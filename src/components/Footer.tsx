@@ -53,7 +53,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-neutral-200 text-center text-sm text-neutral-600">
-          <p>© 2025 Behemoth Bio. All rights reserved. • Made with ♥ by Sol Design</p>
+          <p>© 2029 Behemoth Bio. All rights reserved. • Made with ♥ by Sol Design</p>
         </div>
       </div>
     </footer>

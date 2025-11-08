@@ -3,10 +3,10 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function Projects() {
   const projects = [
     {
-      title: "Woolly Mammoth Revival",
-      description: "Utilizing ancient DNA and CRISPR technology to bring back the woolly mammoth and restore Arctic ecosystems.",
-      status: "Active Research",
-      image: "https://images.unsplash.com/photo-1583096953990-50015dde9302?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29sbHklMjBtYW1tb3RoJTIwZm9zc2lsfGVufDF8fHx8MTc2MjQ0OTA0MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+      title: "Ancient Wolf Revival",
+      description: "Utilizing ancient DNA and CRISPR technology to bring back prehistoric lupines and restore Arctic ecosystems.",
+      status: "On Hold",
+      image: "https://images.unsplash.com/photo-1607346444518-2abde24da0a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"
     },
     {
       title: "Sumatran Tiger Protection",
@@ -41,7 +41,7 @@ export function Projects() {
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="inline-block px-3 py-1 bg-neutral-100 text-neutral-900 rounded-full mb-3 text-sm">
+              <div className={`inline-block px-3 py-1 ${project.status.toLowerCase().includes('hold') ? 'bg-red-100 text-red-800' : 'bg-neutral-100 text-neutral-900'} rounded-full mb-3 text-sm`}>
                 {project.status}
               </div>
               <h3 className="text-neutral-900 mb-2">{project.title}</h3>

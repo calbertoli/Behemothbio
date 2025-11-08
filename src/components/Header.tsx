@@ -1,22 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navLinks = [
-    { href: "#mission", label: "Mission" },
-    { href: "#projects", label: "Projects" },
-    { href: "#science", label: "Science" },
-    { href: "#contact", label: "Contact" },
+    { href: "/mission", label: "Mission", type: "page" },
+    { href: "#projects", label: "Projects", type: "anchor" },
+    { href: "#science", label: "Science", type: "anchor" },
+    { href: "#contact", label: "Contact", type: "anchor" },
   ];
 
   return (
-    <header className="bg-neutral-50 border-b border-neutral-200">
+    <header className="sticky top-0 z-50 bg-neutral-50 border-b border-neutral-200">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <svg width="26px" height="46px" viewBox="0 0 26 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <title>icon</title>
             <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -26,15 +28,24 @@ export function Header() {
             </g>
           </svg>
           <span className="hidden sm:inline text-neutral-900">behemoth</span>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="text-neutral-600 hover:text-neutral-900 transition-colors">
-                {link.label}
-              </a>
+              {link.type === "page" ? (
+                <Link to={link.href} className="text-neutral-600 hover:text-neutral-900 transition-colors">
+                  {link.label}
+                </Link>
+              ) : (
+                <Link 
+                  to={`/${link.href}`}
+                  className="text-neutral-600 hover:text-neutral-900 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -83,10 +94,8 @@ export function Header() {
           >
             <div className="flex flex-col items-center justify-center h-full gap-8">
               {navLinks.map((link, index) => (
-                <motion.a
+                <motion.div
                   key={link.href}
-                  href={link.href}
-                  className="text-neutral-900 text-2xl"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
@@ -94,10 +103,15 @@ export function Header() {
                     duration: 0.4,
                     delay: index * 0.1,
                   }}
-                  onClick={() => setIsMenuOpen(false)}
                 >
-                  {link.label}
-                </motion.a>
+                  <Link
+                    to={link.type === "page" ? link.href : `/${link.href}`}
+                    className="text-neutral-900 text-2xl"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </motion.div>
