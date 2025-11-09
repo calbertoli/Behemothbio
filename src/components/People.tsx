@@ -47,13 +47,13 @@ export function People() {
       videoUrl: "/videos/jiang-wen-work.mp4"
     },
     {
-      id: "chris-dimaggio",
+      id: "chris-marcos",
       name: "Chris Marcos",
-      role: "Mammal Behavioralist",
+      role: "Mammal Behaviorist",
       age: 29,
       image: "https://images.unsplash.com/photo-1696082600718-c8a585306acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzY2llbnRpc3QlMjBtYW4lMjBtdXN0YWNoZSUyMGN1cmx5JTIwaGFpcnxlbnwxfHx8fDE3NjI1NzU4ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bio: "Chris specializes in understanding and rehabilitating mammal social structures for reintroduction programs. His work on woolly mammoth behavior patterns, derived from studying modern elephant populations, has been crucial to our revival efforts. He's passionate about ensuring revived species can thrive in contemporary ecosystems.",
-      videoUrl: "/videos/chris-dimaggio-work.mp4"
+      bio: "Chris specializes in understanding and rehabilitating mammal social structures for reintroduction programs. His work on Pleistocene wolf revival, derived from studying modern wolf pack dynamics, has been crucial to our revival efforts. He's passionate about ensuring revived species can thrive in contemporary ecosystems.",
+      videoUrl: "/videos/chris-marcos-work.mp4"
     }
   ];
 
