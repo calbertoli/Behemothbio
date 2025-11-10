@@ -23,11 +23,11 @@ export function Projects() {
   ];
 
   return (
-    <section id="projects" className="bg-white py-20">
+    <section id="projects" className="bg-white dark:bg-neutral-800 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-neutral-900 mb-4">Active Projects</h2>
-          <p className="text-neutral-600 max-w-2xl mx-auto">
+          <h2 className="text-neutral-900 dark:text-white mb-4">Active Projects</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
             Our groundbreaking initiatives span de-extinction research and endangered species preservation.
           </p>
         </div>
@@ -41,11 +41,11 @@ export function Projects() {
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className={`inline-block px-3 py-1 ${project.status.toLowerCase().includes('hold') ? 'bg-red-100 text-red-800' : 'bg-neutral-100 text-neutral-900'} rounded-full mb-3 text-sm`}>
+              <div className={`inline-block px-3 py-1 ${project.status.toLowerCase().includes('hold') ? 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300' : 'bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-white'} rounded-full mb-3 text-sm`}>
                 {project.status}
               </div>
-              <h3 className="text-neutral-900 mb-2">{project.title}</h3>
-              <p className="text-neutral-600">{project.description}</p>
+              <h3 className="text-neutral-900 dark:text-white mb-2">{project.title}</h3>
+              <p className="text-neutral-600 dark:text-neutral-400">{project.description}</p>
             </div>
           ))}
         </div>

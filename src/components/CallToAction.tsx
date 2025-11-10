@@ -3,15 +3,15 @@ import { Mail } from "lucide-react";
 
 export function CallToAction() {
   return (
-    <section id="contact" className="bg-white py-20">
+    <section id="contact" className="bg-white dark:bg-neutral-800 py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center bg-neutral-900 rounded-3xl overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-12 items-center bg-neutral-900 dark:bg-neutral-950 rounded-3xl overflow-hidden">
           <div className="p-12">
-            <h2 className="text-white mb-4">Join Our Mission</h2>
-            <p className="text-neutral-300 mb-8">
+            <h2 className="text-white dark:text-neutral-100 mb-4">Join Our Mission</h2>
+            <p className="text-neutral-300 dark:text-neutral-400 mb-8">
               Whether you're a researcher, conservationist, or supporter, there are many ways to contribute to preserving Earth's biodiversity.
             </p>
-            <button className="px-6 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-colors flex items-center gap-2">
+            <button className="px-6 py-3 border-2 border-white dark:border-neutral-300 text-white dark:text-neutral-100 rounded-lg hover:bg-white/10 dark:hover:bg-neutral-800 transition-colors flex items-center gap-2">
               <Mail className="w-4 h-4" />
               Get Involved
             </button>

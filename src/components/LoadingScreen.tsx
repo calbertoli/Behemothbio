@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export function LoadingScreen() {
   return (
     <motion.div
-      className="fixed inset-0 z-[100] bg-white flex items-center justify-center"
+      className="fixed inset-0 z-[100] bg-white dark:bg-neutral-900 flex items-center justify-center"
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6, ease: "easeInOut" }}
@@ -18,7 +18,7 @@ export function LoadingScreen() {
       >
         <defs>
           <linearGradient id="loadingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#ffffff" stopOpacity="0">
+            <stop offset="0%" className="[stop-color:white] dark:[stop-color:#171717]" stopOpacity="0">
               <animate
                 attributeName="offset"
                 values="0;1;0"
@@ -26,7 +26,7 @@ export function LoadingScreen() {
                 repeatCount="indefinite"
               />
             </stop>
-            <stop offset="20%" stopColor="#d1d1d1" stopOpacity="1">
+            <stop offset="20%" className="[stop-color:#d1d1d1] dark:[stop-color:#525252]" stopOpacity="1">
               <animate
                 attributeName="offset"
                 values="0.2;1.2;0.2"
@@ -34,7 +34,7 @@ export function LoadingScreen() {
                 repeatCount="indefinite"
               />
             </stop>
-            <stop offset="40%" stopColor="#ffffff" stopOpacity="0">
+            <stop offset="40%" className="[stop-color:white] dark:[stop-color:#171717]" stopOpacity="0">
               <animate
                 attributeName="offset"
                 values="0.4;1.4;0.4"

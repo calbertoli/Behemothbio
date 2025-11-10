@@ -69,8 +69,8 @@ export function MissionPage() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h1 className="text-neutral-900 mb-6">Our Mission</h1>
-          <p className="text-neutral-600 text-lg">
+          <h1 className="text-neutral-900 dark:text-white mb-6">Our Mission</h1>
+          <p className="text-neutral-600 dark:text-neutral-400 text-lg">
             To reverse the tide of extinction through advanced biotechnology while fostering a deeper understanding of our responsibility to protect Earth's biodiversity for all future generations.
           </p>
         </div>
@@ -84,23 +84,23 @@ export function MissionPage() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-white py-20">
+      <section className="bg-white dark:bg-neutral-800 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-neutral-900 mb-4">Our Core Values</h2>
-            <p className="text-neutral-600 max-w-2xl mx-auto">
+            <h2 className="text-neutral-900 dark:text-white mb-4">Our Core Values</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
               These principles guide every decision we make and every project we undertake.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
             {values.map((value) => (
               <div key={value.title} className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-neutral-100 text-neutral-900 mb-6">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-neutral-100 dark:bg-neutral-700 text-neutral-900 dark:text-white mb-6">
                   <value.icon className="w-10 h-10" />
                 </div>
-                <h3 className="text-neutral-900 mb-3">{value.title}</h3>
-                <p className="text-neutral-600 mb-4">{value.description}</p>
-                <p className="text-neutral-500 text-sm leading-relaxed">{value.expanded}</p>
+                <h3 className="text-neutral-900 dark:text-white mb-3">{value.title}</h3>
+                <p className="text-neutral-600 dark:text-neutral-400 mb-4">{value.description}</p>
+                <p className="text-neutral-500 dark:text-neutral-500 text-sm leading-relaxed">{value.expanded}</p>
               </div>
             ))}
           </div>
@@ -118,14 +118,14 @@ export function MissionPage() {
             />
           </div>
           <div>
-            <h2 className="text-neutral-900 mb-6">The Challenge We Face</h2>
-            <p className="text-neutral-600 mb-4">
+            <h2 className="text-neutral-900 dark:text-white mb-6">The Challenge We Face</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 mb-4">
               We are living through the sixth mass extinction event in Earth's history. Species are disappearing at a rate 1,000 times faster than natural background extinction rates. Climate change, habitat loss, and human activity have pushed countless species to the brink.
             </p>
-            <p className="text-neutral-600 mb-4">
+            <p className="text-neutral-600 dark:text-neutral-400 mb-4">
               But unlike previous mass extinctions, this one is within our power to stop. We have the scientific knowledge, technological capability, and ethical responsibility to act.
             </p>
-            <p className="text-neutral-600">
+            <p className="text-neutral-600 dark:text-neutral-400">
               behemoth exists at the intersection of cutting-edge science and urgent conservation need. We're not just studying the problem—we're actively working to reverse it.
             </p>
           </div>
@@ -133,22 +133,22 @@ export function MissionPage() {
       </section>
 
       {/* Operating Principles */}
-      <section className="bg-white py-20">
+      <section className="bg-white dark:bg-neutral-800 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-neutral-900 mb-4">How We Work</h2>
-            <p className="text-neutral-600 max-w-2xl mx-auto">
+            <h2 className="text-neutral-900 dark:text-white mb-4">How We Work</h2>
+            <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
               Our operating principles ensure that our work is responsible, collaborative, and effective.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {principles.map((principle) => (
-              <div key={principle.title} className="bg-neutral-50 rounded-2xl p-8">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-neutral-900 text-white mb-4">
+              <div key={principle.title} className="bg-neutral-50 dark:bg-neutral-900 rounded-2xl p-8">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 mb-4">
                   <principle.icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-neutral-900 mb-3">{principle.title}</h3>
-                <p className="text-neutral-600">{principle.description}</p>
+                <h3 className="text-neutral-900 dark:text-white mb-3">{principle.title}</h3>
+                <p className="text-neutral-600 dark:text-neutral-400">{principle.description}</p>
               </div>
             ))}
           </div>
@@ -158,30 +158,30 @@ export function MissionPage() {
       {/* Impact Metrics */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-neutral-900 mb-4">Our Impact</h2>
-          <p className="text-neutral-600 max-w-2xl mx-auto">
+          <h2 className="text-neutral-900 dark:text-white mb-4">Our Impact</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
             Measurable progress toward a more biodiverse future.
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {impact.map((stat) => (
-            <div key={stat.label} className="text-center p-6 bg-neutral-50 rounded-2xl">
-              <div className="text-4xl md:text-5xl text-neutral-900 mb-2">{stat.number}</div>
-              <div className="text-neutral-900 mb-2">{stat.label}</div>
-              <p className="text-neutral-600 text-sm">{stat.description}</p>
+            <div key={stat.label} className="text-center p-6 bg-neutral-50 dark:bg-neutral-800 rounded-2xl">
+              <div className="text-4xl md:text-5xl text-neutral-900 dark:text-white mb-2">{stat.number}</div>
+              <div className="text-neutral-900 dark:text-white mb-2">{stat.label}</div>
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm">{stat.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* Vision Statement */}
-      <section className="bg-neutral-900 py-20">
+      <section className="bg-neutral-900 dark:bg-neutral-950 py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-white mb-6">Our Vision for the Future</h2>
-          <p className="text-neutral-300 text-lg mb-8">
+          <h2 className="text-white dark:text-neutral-100 mb-6">Our Vision for the Future</h2>
+          <p className="text-neutral-300 dark:text-neutral-400 text-lg mb-8">
             We envision a world where extinction is no longer irreversible. Where damaged ecosystems can be restored. Where future generations inherit a planet as rich in biodiversity as the one we received—or richer still.
           </p>
-          <p className="text-neutral-300 text-lg">
+          <p className="text-neutral-300 dark:text-neutral-400 text-lg">
             This is not science fiction. This is the work we do every day, guided by compassion, powered by innovation, and driven by an unwavering commitment to life on Earth.
           </p>
         </div>

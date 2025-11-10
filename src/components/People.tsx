@@ -64,11 +64,11 @@ export function People() {
   const expanded = people.find(p => p.id === expandedPerson);
 
   return (
-    <section id="people" className="bg-white py-20">
+    <section id="people" className="bg-white dark:bg-neutral-800 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-neutral-900 mb-4">Our People</h2>
-          <p className="text-neutral-600 max-w-2xl mx-auto">
+          <h2 className="text-neutral-900 dark:text-white mb-4">Our People</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
             Meet the brilliant minds behind our groundbreaking work in de-extinction and conservation.
           </p>
         </div>
@@ -81,7 +81,7 @@ export function People() {
               onClick={() => handlePersonClick(person.id)}
               className="group flex flex-col items-center gap-4 transition-transform hover:scale-105"
             >
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-neutral-100 group-hover:border-neutral-300 transition-colors">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-neutral-100 dark:border-neutral-700 group-hover:border-neutral-300 dark:group-hover:border-neutral-500 transition-colors">
                 <ImageWithFallback
                   src={person.image}
                   alt={person.name}
@@ -89,8 +89,8 @@ export function People() {
                 />
               </div>
               <div className="text-center">
-                <h3 className="text-neutral-900">{person.name}</h3>
-                <p className="text-neutral-600 text-sm">{person.role}</p>
+                <h3 className="text-neutral-900 dark:text-white">{person.name}</h3>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm">{person.role}</p>
               </div>
             </button>
           ))}
@@ -106,20 +106,20 @@ export function People() {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <div className="bg-neutral-50 rounded-3xl p-8 md:p-12 mt-8 relative">
+              <div className="bg-neutral-50 dark:bg-neutral-900 rounded-3xl p-8 md:p-12 mt-8 relative">
                 <button
                   onClick={() => setExpandedPerson(null)}
-                  className="absolute top-6 right-6 p-2 rounded-full hover:bg-neutral-200 transition-colors"
+                  className="absolute top-6 right-6 p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
                   aria-label="Close"
                 >
-                  <X className="w-5 h-5 text-neutral-600" />
+                  <X className="w-5 h-5 text-neutral-600 dark:text-neutral-400" />
                 </button>
 
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                   {/* Left: Bio */}
                   <div>
                     <div className="flex items-center gap-6 mb-6">
-                      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white">
+                      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-neutral-800">
                         <ImageWithFallback
                           src={expanded.image}
                           alt={expanded.name}
@@ -127,17 +127,17 @@ export function People() {
                         />
                       </div>
                       <div>
-                        <h3 className="text-neutral-900 mb-1">{expanded.name}</h3>
-                        <p className="text-neutral-600">{expanded.role}</p>
+                        <h3 className="text-neutral-900 dark:text-white mb-1">{expanded.name}</h3>
+                        <p className="text-neutral-600 dark:text-neutral-400">{expanded.role}</p>
                       </div>
                     </div>
-                    <p className="text-neutral-700 leading-relaxed">
+                    <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed">
                       {expanded.bio}
                     </p>
                   </div>
 
                   {/* Right: Video */}
-                  <div className="rounded-2xl overflow-hidden bg-neutral-200">
+                  <div className="rounded-2xl overflow-hidden bg-neutral-200 dark:bg-neutral-700">
                     <div className="aspect-video flex items-center justify-center">
                       {expanded.videoUrl ? (
                         <video
@@ -150,8 +150,8 @@ export function People() {
                         </video>
                       ) : (
                         <div className="text-center p-8">
-                          <p className="text-neutral-500">Video embed placeholder</p>
-                          <p className="text-sm text-neutral-400 mt-2">
+                          <p className="text-neutral-500 dark:text-neutral-400">Video embed placeholder</p>
+                          <p className="text-sm text-neutral-400 dark:text-neutral-500 mt-2">
                             {expanded.name} - {expanded.role}
                           </p>
                         </div>

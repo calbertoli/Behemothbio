@@ -22,19 +22,19 @@ export function Mission() {
   return (
     <section id="mission" className="max-w-7xl mx-auto px-6 py-20">
       <div className="text-center mb-16">
-        <h2 className="text-neutral-900 mb-4">Our Mission</h2>
-        <p className="text-neutral-600 max-w-2xl mx-auto">
+        <h2 className="text-neutral-900 dark:text-white mb-4">Our Mission</h2>
+        <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
           Through advanced biotechnology and dedicated research, we're working to reverse extinction events and protect endangered species from vanishing forever.
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
         {values.map((value) => (
           <div key={value.title} className="text-center p-8">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-neutral-100 text-neutral-900 mb-4">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white mb-4">
               <value.icon className="w-8 h-8" />
             </div>
-            <h3 className="text-neutral-900 mb-3">{value.title}</h3>
-            <p className="text-neutral-600">{value.description}</p>
+            <h3 className="text-neutral-900 dark:text-white mb-3">{value.title}</h3>
+            <p className="text-neutral-600 dark:text-neutral-400">{value.description}</p>
           </div>
         ))}
       </div>
