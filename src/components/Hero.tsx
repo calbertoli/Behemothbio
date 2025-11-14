@@ -76,13 +76,10 @@ export function Hero() {
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden">
-          <video
-            src="https://assets.mixkit.co/videos/preview/mixkit-wild-animals-in-the-savannah-4050-large.mp4"
+          <LoadingImage
+            src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2VremU1ZHZqZjYybnhtampudHlid3M4MWVlMGlpOXNsMHo2ZWI2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nP7C2Eo99KH9C/giphy.gif"
+            alt="Wildlife conservation"
             className="w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
           />
         </div>
       </div>
