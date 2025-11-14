@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { LoadingImage } from "../components/LoadingImage";
 import { Heart, Shield, Microscope, Globe, Users, Target } from "lucide-react";
+import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 
 export function MissionPage() {
+  useEffect(() => {
+    document.title = "Mission | Behemoth - For a Wild Future";
+  }, []);
   const values = [
     {
       icon: Heart,
