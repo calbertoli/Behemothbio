@@ -1,5 +1,5 @@
 
-  # Behemoth – Because Life Needs a Second Chance
+  # Minimalist Biotech Website Design
 
   This is a code bundle for Minimalist Biotech Website Design. The original project is available at https://www.figma.com/design/U4YnKlyABwznefd4mPBNM7/Minimalist-Biotech-Website-Design.
 

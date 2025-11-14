@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "../components/figma/ImageWithFallback";
+import { LoadingImage } from "../components/LoadingImage";
 import { Heart, Shield, Microscope, Globe, Users, Target } from "lucide-react";
 
 export function MissionPage() {
@@ -75,7 +75,7 @@ export function MissionPage() {
           </p>
         </div>
         <div className="rounded-3xl overflow-hidden">
-          <ImageWithFallback
+          <LoadingImage
             src="https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aWxkbGlmZSUyMGVjb3N5c3RlbSUyMG5hdHVyZXxlbnwxfHx8fDE3NjI1NzYzMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Wildlife ecosystem"
             className="w-full h-[400px] md:h-[500px] object-cover"

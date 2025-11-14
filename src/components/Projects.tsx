@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 
 export function Projects() {
   const projects = [
@@ -35,7 +35,7 @@ export function Projects() {
           {projects.map((project) => (
             <div key={project.title} className="group">
               <div className="rounded-2xl overflow-hidden mb-4">
-                <ImageWithFallback
+                <LoadingImage
                   src={project.image}
                   alt={project.title}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"

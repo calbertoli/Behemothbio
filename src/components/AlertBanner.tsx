@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Info, X, ChevronDown, ChevronUp } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 
 export function AlertBanner() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -56,7 +56,7 @@ export function AlertBanner() {
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
           {/* Memorial Image */}
           <div className="w-full relative mb-4">
-            <ImageWithFallback 
+            <LoadingImage 
               src="https://behemoth.bio/images/remembering-gareth.jpg" 
               alt="Memorial for Dr. Gareth Valmont" 
               className="w-full h-auto rounded-lg"

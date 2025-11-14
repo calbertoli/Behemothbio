@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 import { X } from "lucide-react";
 
 interface Person {
@@ -82,7 +82,7 @@ export function People() {
               className="group flex flex-col items-center gap-4 transition-transform hover:scale-105"
             >
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-neutral-100 dark:border-neutral-700 group-hover:border-neutral-300 dark:group-hover:border-neutral-500 transition-colors">
-                <ImageWithFallback
+                <LoadingImage
                   src={person.image}
                   alt={person.name}
                   className="w-full h-full object-cover"
@@ -120,7 +120,7 @@ export function People() {
                   <div>
                     <div className="flex items-center gap-6 mb-6">
                       <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-neutral-800">
-                        <ImageWithFallback
+                        <LoadingImage
                           src={expanded.image}
                           alt={expanded.name}
                           className="w-full h-full object-cover"

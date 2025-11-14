@@ -1,11 +1,11 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 
 export function Science() {
   return (
     <section id="science" className="max-w-7xl mx-auto px-6 py-20">
       <div className="grid md:grid-cols-2 gap-12 items-center">
         <div className="rounded-3xl overflow-hidden">
-          <ImageWithFallback
+          <LoadingImage
             src="https://images.unsplash.com/photo-1583912086005-ac9abca6c9db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5ldGljJTIwbGFib3JhdG9yeSUyMHNjaWVuY2V8ZW58MXx8fHwxNzYyNDQ5MDQwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Genetic laboratory"
             className="w-full h-full object-cover"

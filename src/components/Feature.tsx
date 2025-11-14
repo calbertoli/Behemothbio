@@ -1,17 +1,23 @@
 import image_3dc2446cd8945f3670cf5e1058a9ba52f91671ef from 'figma:asset/3dc2446cd8945f3670cf5e1058a9ba52f91671ef.png';
 import image_24e310617ff18048e8c8bf64a260ffff1f9003f2 from 'figma:asset/24e310617ff18048e8c8bf64a260ffff1f9003f2.png';
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 
 export function Feature() {
   return (
     <section className="px-6 py-20">
       <div className="max-w-7xl mx-auto">
         <div className="relative rounded-3xl overflow-hidden min-h-[400px] md:min-h-[500px]">
-          <ImageWithFallback
-            src={image_3dc2446cd8945f3670cf5e1058a9ba52f91671ef}
-            alt="Arctic landscape"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover absolute inset-0"
-          />
+            poster={image_3dc2446cd8945f3670cf5e1058a9ba52f91671ef}
+          >
+            <source src="https://behemoth.bio/videos/gene-interpolation-loop.mp4" type="video/mp4" />
+            {/* Fallback to poster image if video fails */}
+          </video>
           <div className="relative z-10 h-full flex items-center justify-center md:justify-start p-12">
             <div className="max-w-xl text-center md:text-left">
               <h2 className="text-white mb-6 text-[48px]">

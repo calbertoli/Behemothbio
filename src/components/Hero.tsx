@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -76,7 +76,7 @@ export function Hero() {
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden">
-          <ImageWithFallback
+          <LoadingImage
             src="https://images.unsplash.com/photo-1672586658825-e653341241fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmRhbmdlcmVkJTIwc3BlY2llcyUyMHdpbGRsaWZlfGVufDF8fHx8MTc2MjQ0OTAzOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
             alt="Wildlife conservation"
             className="w-full h-full object-cover"

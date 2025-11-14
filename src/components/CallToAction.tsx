@@ -1,4 +1,4 @@
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LoadingImage } from "./LoadingImage";
 import { Briefcase } from "lucide-react";
 
 export function CallToAction() {
@@ -17,7 +17,7 @@ export function CallToAction() {
             </button>
           </div>
           <div className="h-full min-h-[400px]">
-            <ImageWithFallback
+            <LoadingImage
               src="https://images.unsplash.com/photo-1694701478292-3f60eb30c3b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkbmElMjByZXNlYXJjaCUyMG1pY3Jvc2NvcGV8ZW58MXx8fHwxNzYyNDQ5MDQxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
               alt="DNA research"
               className="w-full h-full object-cover"
