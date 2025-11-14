@@ -76,10 +76,13 @@ export function Hero() {
           </div>
         </div>
         <div className="rounded-3xl overflow-hidden">
-          <LoadingImage
-            src="https://images.unsplash.com/photo-1672586658825-e653341241fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmRhbmdlcmVkJTIwc3BlY2llcyUyMHdpbGRsaWZlfGVufDF8fHx8MTc2MjQ0OTAzOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Wildlife conservation"
+          <video
+            src="https://player.vimeo.com/external/371433846.hd.mp4?s=c6c4b0c5b5b0e6b4c8e5d8c8f8f8c8c8&profile_id=175"
             className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
       </div>
