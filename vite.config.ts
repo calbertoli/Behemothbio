@@ -46,7 +46,7 @@
         '@radix-ui/react-checkbox@1.1.4': '@radix-ui/react-checkbox',
         '@radix-ui/react-avatar@1.1.3': '@radix-ui/react-avatar',
         '@radix-ui/react-aspect-ratio@1.1.2': '@radix-ui/react-aspect-ratio',
-        '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialog',
+        '@radix-ui/react-alert-dialog@1.1.6': '@radix-ui/react-alert-dialogdist
         '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
         '@jsr/supabase__supabase-js@2.49.8': '@jsr/supabase__supabase-js',
         '@': path.resolve(__dirname, './src'),
@@ -54,7 +54,7 @@
     },
     build: {
       target: 'esnext',
-      outDir: 'build',
+      outDir: 'dist',
     },
     server: {
       port: 3000,
