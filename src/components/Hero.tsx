@@ -77,7 +77,7 @@ export function Hero() {
         </div>
         <div className="rounded-3xl overflow-hidden">
           <video
-            src="https://player.vimeo.com/external/371433846.hd.mp4?s=c6c4b0c5b5b0e6b4c8e5d8c8f8f8c8c8&profile_id=175"
+            src="https://assets.mixkit.co/videos/preview/mixkit-wild-animals-in-the-savannah-4050-large.mp4"
             className="w-full h-full object-cover"
             autoPlay
             muted
