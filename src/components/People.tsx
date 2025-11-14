@@ -25,7 +25,7 @@ export function People() {
       role: "Chief Revival Scientist",
       age: 55,
       image: "https://images.unsplash.com/photo-1623376550324-d406ae677c04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b21hbiUyMHNjaWVudGlzdCUyMGdsYXNzZXMlMjBjcmV3JTIwY3V0fGVufDF8fHx8MTc2MjU3NTg4MHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      bio: "Dr. Santos pioneered the revolutionary genetic sequencing techniques that made de-extinction possible. With over 30 years of experience in molecular biology and conservation genetics, she leads our team in developing ethical frameworks for species revival. Her groundbreaking research on ancient DNA preservation has been published in over 150 peer-reviewed journals.",
+      bio: "Dr. Santos pioneered the revolutionary genetic sequencing techniques that made reverse extinction possible. With over 30 years of experience in molecular biology and conservation genetics, she leads our team in developing ethical frameworks for species revival. Her groundbreaking research on ancient DNA preservation has been published in over 150 peer-reviewed journals.",
       videoUrl: "/videos/bess-santos-work.mp4"
     },
     {
@@ -67,9 +67,9 @@ export function People() {
     <section id="people" className="bg-white dark:bg-neutral-800 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-neutral-900 dark:text-white mb-4">Our People</h2>
+          <h2 className="text-neutral-900 dark:text-white mb-4">Humans of Behemoth</h2>
           <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            Meet the brilliant minds behind our groundbreaking work in de-extinction and conservation.
+            Meet some of the brilliant minds behind our groundbreaking work in reverse extinction and conservation.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ export function Footer() {
               </svg>
             </div>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm">
-              Pioneering de-extinction and species preservation through advanced biotechnology.
+              Pioneering reverse extinction and species preservation through advanced biotechnology.
             </p>
           </div>
           <div>
@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <h4 className="text-neutral-900 dark:text-white mb-4">Projects</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">De-Extinction</a></li>
+              <li><a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">Reverse Extinction</a></li>
               <li><a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">Conservation</a></li>
               <li><a href="#" className="text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">Partnerships</a></li>
             </ul>
@@ -152,7 +152,7 @@ export function Footer() {
             </p>
             <h4 className="text-neutral-900 dark:text-white">Regulatory Compliance</h4>
             <p>
-              All de-extinction and conservation projects are conducted in accordance with the Convention on Biological Diversity and relevant national wildlife protection statutes.
+              All reverse extinction and conservation projects are conducted in accordance with the Convention on Biological Diversity and relevant national wildlife protection statutes.
             </p>
             <h4 className="text-neutral-900 dark:text-white">Research Ethics</h4>
             <p>

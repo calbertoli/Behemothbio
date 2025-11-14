@@ -7,7 +7,7 @@ export function MissionPage() {
       icon: Heart,
       title: "Compassion",
       description: "Every species has intrinsic value and deserves protection and preservation.",
-      expanded: "We believe that all life on Earth is interconnected and sacred. Our approach to de-extinction and conservation is rooted in deep respect for the natural world and a commitment to minimizing suffering while maximizing biodiversity."
+      expanded: "We believe that all life on Earth is interconnected and sacred. Our approach to reverse extinction and conservation is rooted in deep respect for the natural world and a commitment to minimizing suffering while maximizing biodiversity."
     },
     {
       icon: Shield,
@@ -45,7 +45,7 @@ export function MissionPage() {
     {
       number: "12",
       label: "Species Projects",
-      description: "Active de-extinction and conservation initiatives"
+      description: "Active reverse extinction and conservation initiatives"
     },
     {
       number: "50+",

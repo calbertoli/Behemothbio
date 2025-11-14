@@ -83,7 +83,7 @@ export function AlertBanner() {
             </p>
             
             <p>
-              Dr. Valmont's vision transformed the field of de-extinction from theoretical possibility to tangible reality. Under his leadership, Behemoth successfully revived three extinct species and pioneered ethical frameworks that balanced scientific ambition with ecological responsibility. His passion for conservation and unwavering belief in humanity's ability to correct past mistakes inspired everyone who worked alongside him.
+              Dr. Valmont's vision transformed the field of reverse extinction from theoretical possibility to tangible reality. Under his leadership, Behemoth successfully revived three extinct species and pioneered ethical frameworks that balanced scientific ambition with ecological responsibility. His passion for conservation and unwavering belief in humanity's ability to correct past mistakes inspired everyone who worked alongside him.
             </p>
             
             <p>

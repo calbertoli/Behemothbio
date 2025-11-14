@@ -28,7 +28,7 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-neutral-900 dark:text-white mb-4">Active Projects</h2>
           <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
-            Our groundbreaking initiatives span de-extinction research and endangered species preservation.
+            Our groundbreaking initiatives span reverse extinction research and endangered species preservation.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
