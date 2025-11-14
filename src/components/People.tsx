@@ -141,6 +141,7 @@ export function People() {
                     <div className="aspect-video flex items-center justify-center">
                       {expanded.videoUrl ? (
                         <video
+                          key={expanded.videoUrl}
                           controls
                           autoPlay
                           className="w-full h-full object-cover"
