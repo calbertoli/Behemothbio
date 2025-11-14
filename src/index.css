@@ -485,10 +485,6 @@
     left: 50%;
   }
 
-  .z-10 {
-    z-index: 10;
-  }
-
   .z-40 {
     z-index: 40;
   }
@@ -833,6 +829,11 @@
 
   .rounded-xl {
     border-radius: calc(var(--radius)  + 4px);
+  }
+
+  .rounded-b-3xl {
+    border-bottom-right-radius: var(--radius-3xl);
+    border-bottom-left-radius: var(--radius-3xl);
   }
 
   .rounded-b-lg {
@@ -1415,20 +1416,8 @@
   }
 
   @media (width >= 48rem) {
-    .md\:justify-start {
-      justify-content: flex-start;
-    }
-  }
-
-  @media (width >= 48rem) {
     .md\:p-12 {
       padding: calc(var(--spacing) * 12);
-    }
-  }
-
-  @media (width >= 48rem) {
-    .md\:text-left {
-      text-align: left;
     }
   }
 

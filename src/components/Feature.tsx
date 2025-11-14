@@ -18,8 +18,8 @@ export function Feature() {
             <source src="https://behemoth.bio/videos/gene-interpolation-loop.mp4" type="video/mp4" />
             {/* Fallback to poster image if video fails */}
           </video>
-          <div className="relative z-10 h-full flex items-center justify-center md:justify-start p-12">
-            <div className="max-w-xl text-center md:text-left">
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent rounded-b-3xl p-12">
+            <div className="max-w-xl">
               <h2 className="text-white mb-6 text-[48px]">
                 Gene Interpolation
               </h2>
