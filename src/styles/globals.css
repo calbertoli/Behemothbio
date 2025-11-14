@@ -1,30 +1,30 @@
 /* Custom Font Declarations */
 @font-face {
-  font-family: 'YourCustomFont';
-  src: url('/fonts/YourFont-Regular.woff2') format('woff2');
+  font-family: 'behemoth';
+  src: url('/fonts/behemoth-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'YourCustomFont';
-  src: url('/fonts/YourFont-Medium.woff2') format('woff2');
+  font-family: 'behemoth';
+  src: url('/fonts/behemoth-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'YourCustomFont';
-  src: url('/fonts/YourFont-Bold.woff2') format('woff2');
+  font-family: 'behemoth';
+  src: url('/fonts/behemoth-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --font-family-sans: 'YourCustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-sans: 'behemoth', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-size: 16px;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);

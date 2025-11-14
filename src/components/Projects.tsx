@@ -3,7 +3,7 @@ import { ImageWithFallback } from "./figma/ImageWithFallback";
 export function Projects() {
   const projects = [
     {
-      title: "Ancient Wolf Revival",
+      title: "Pleistocene Wolf Revival",
       description: "Utilizing ancient DNA and CRISPR technology to bring back prehistoric lupines and restore Arctic ecosystems.",
       status: "On Hold",
       image: "https://images.unsplash.com/photo-1607346444518-2abde24da0a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8"

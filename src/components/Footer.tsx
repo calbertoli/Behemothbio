@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { Twitter, Linkedin, Github } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
 
 export function Footer() {
+  const [openModal, setOpenModal] = useState<'privacy' | 'terms' | 'legal' | null>(null);
   return (
     <footer className="bg-neutral-50 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-700 py-12">
       <div className="max-w-7xl mx-auto px-6">
@@ -15,7 +18,6 @@ export function Footer() {
                   </g>
                 </g>
               </svg>
-              <span className="text-neutral-900 dark:text-white">behemoth</span>
             </div>
             <p className="text-neutral-600 dark:text-neutral-400 text-sm">
               Pioneering de-extinction and species preservation through advanced biotechnology.
@@ -53,9 +55,116 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-8 border-t border-neutral-200 dark:border-neutral-700 text-center text-sm text-neutral-600 dark:text-neutral-400">
-          <p>© 2029 Behemoth Bio. All rights reserved. • Made with ♥ by Sol Design</p>
+          <p>© 2029 Behemoth Bio. All rights reserved. • Made with ♥ in DFW</p>
+          <p>
+            <button 
+              onClick={() => setOpenModal('privacy')}
+              className="hover:text-neutral-900 dark:hover:text-white transition-colors underline"
+            >
+              Privacy Policy
+            </button>
+            {' | '}
+            <button 
+              onClick={() => setOpenModal('terms')}
+              className="hover:text-neutral-900 dark:hover:text-white transition-colors underline"
+            >
+              Terms of Use
+            </button>
+            {' | '}
+            <button 
+              onClick={() => setOpenModal('legal')}
+              className="hover:text-neutral-900 dark:hover:text-white transition-colors underline font-normal"
+            >
+              Legal
+            </button>
+          </p>
+          <p className="uppercase font-extrabold text-[12px]">This site is a fictional parody created as a tie-in to the novel <em>Hail Solstice</em>. Any resemblance to real companies is coincidental.</p>
         </div>
       </div>
+
+      <Dialog open={openModal === 'privacy'} onOpenChange={() => setOpenModal(null)}>
+        <DialogContent className="bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700">
+          <DialogHeader>
+            <DialogTitle className="text-neutral-900 dark:text-white">Privacy Policy</DialogTitle>
+            <DialogDescription className="text-neutral-600 dark:text-neutral-400">
+              Last updated: January 2029
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 text-sm text-neutral-600 dark:text-neutral-400">
+            <p>
+              Behemoth Bio is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Information We Collect</h4>
+            <p>
+              We collect information you provide directly to us, including name, email address, and any other information you choose to provide. We also automatically collect certain information about your device when you use our services.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">How We Use Your Information</h4>
+            <p>
+              We use the information we collect to provide, maintain, and improve our services, to communicate with you, and to comply with legal obligations.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Data Security</h4>
+            <p>
+              We implement appropriate technical and organizational measures to protect the security of your personal information.
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={openModal === 'terms'} onOpenChange={() => setOpenModal(null)}>
+        <DialogContent className="bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700">
+          <DialogHeader>
+            <DialogTitle className="text-neutral-900 dark:text-white">Terms of Use</DialogTitle>
+            <DialogDescription className="text-neutral-600 dark:text-neutral-400">
+              Last updated: January 2029
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 text-sm text-neutral-600 dark:text-neutral-400">
+            <p>
+              By accessing and using Behemoth Bio's website and services, you agree to be bound by these Terms of Use.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Acceptable Use</h4>
+            <p>
+              You agree to use our services only for lawful purposes and in accordance with these Terms. You agree not to use our services in any way that could damage, disable, or impair our systems.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Intellectual Property</h4>
+            <p>
+              All content, trademarks, and data on this website, including but not limited to software, databases, text, graphics, icons, and hyperlinks, are the property of or licensed to Behemoth Bio.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Limitation of Liability</h4>
+            <p>
+              Behemoth Bio shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={openModal === 'legal'} onOpenChange={() => setOpenModal(null)}>
+        <DialogContent className="bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700">
+          <DialogHeader>
+            <DialogTitle className="text-neutral-900 dark:text-white">Legal Information</DialogTitle>
+            <DialogDescription className="text-neutral-600 dark:text-neutral-400">
+              Important legal disclosures
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4 text-sm text-neutral-600 dark:text-neutral-400">
+            <p>
+              Behemoth Bio operates under the regulatory oversight of the International Biotechnology Ethics Committee (IBEC) and complies with all applicable national and international laws regarding genetic research and species preservation.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Regulatory Compliance</h4>
+            <p>
+              All de-extinction and conservation projects are conducted in accordance with the Convention on Biological Diversity and relevant national wildlife protection statutes.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Research Ethics</h4>
+            <p>
+              Our research adheres to the highest ethical standards, including peer review, transparency, and compliance with international guidelines for genetic modification and species reintroduction.
+            </p>
+            <h4 className="text-neutral-900 dark:text-white">Disclaimer</h4>
+            <p>
+              This website is a fictional creation. Behemoth Bio is not a real organization. This site exists solely as a creative companion to the novel <em>Hail Solstice</em>. Any similarity to actual companies, organizations, or scientific projects is purely coincidental.
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </footer>
   );
 }

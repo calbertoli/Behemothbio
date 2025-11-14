@@ -55,9 +55,9 @@ export function Hero() {
           <div className="mb-6 text-[clamp(32px,8vw,75px)]" style={{ lineHeight: '0.8' }}>
             <span className="text-neutral-900 dark:text-white">because </span>
             <span className="text-neutral-900 dark:text-white" style={{ fontWeight: 600 }}>
-              {displayedText}<span className="animate-pulse inline-block" style={{ width: '0.5em' }}>|</span>
+              {displayedText}<span className="animate-pulse inline-block" style={{ fontWeight: 300, width: '0.3em' }}>|</span>
             </span>
-            <span className="text-neutral-900 dark:text-white">deserve a second chance</span>
+            <span className="text-neutral-900 dark:text-white">deserve a second chance.</span>
           </div>
           <h1 className="text-neutral-900 dark:text-white mb-6">
             Restoring Life, Preserving the Future

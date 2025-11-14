@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
-import { PawPrint, Beaker, Microscope, Mail } from "lucide-react";
+import { PawPrint, Beaker, Microscope, Briefcase } from "lucide-react";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ export function Header() {
     { href: "/mission", label: "Mission", type: "page", icon: PawPrint },
     { href: "#projects", label: "Projects", type: "anchor", icon: Beaker },
     { href: "#science", label: "Science", type: "anchor", icon: Microscope },
-    { href: "#contact", label: "Contact", type: "anchor", icon: Mail },
+    { href: "#contact", label: "Careers", type: "anchor", icon: Briefcase },
   ];
 
   return (
@@ -28,7 +28,7 @@ export function Header() {
               </g>
             </g>
           </svg>
-          <span className="hidden sm:inline text-neutral-900 dark:text-white" style={{ fontWeight: 600, fontSize: '28px', marginBottom: '-14px' }}>behemoth</span>
+          <span className="hidden sm:inline text-neutral-900 dark:text-white" style={{ fontWeight: 500, fontSize: '26px', marginBottom: '-14px' }}>behemoth</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -9,11 +9,11 @@ export function AlertBanner() {
 
   if (isCollapsed) {
     return (
-      <div className="bg-red-50 border-b border-red-200">
+      <div className="bg-red-50 dark:bg-neutral-900 border-b border-red-200 dark:border-neutral-700">
         <div className="max-w-7xl mx-auto px-6 py-2">
           <button
             onClick={() => setIsCollapsed(false)}
-            className="flex items-center gap-2 text-red-800 hover:text-red-900 transition-colors w-full justify-center"
+            className="flex items-center gap-2 text-red-800 dark:text-neutral-300 hover:text-red-900 dark:hover:text-white transition-colors w-full justify-center"
           >
             <ChevronDown className="w-4 h-4" />
             <span className="text-sm">In Memoriam: Founder Gareth Valmont</span>
@@ -25,16 +25,16 @@ export function AlertBanner() {
 
   return (
     <>
-      <div className="bg-red-50 border-b border-red-200">
+      <div className="bg-red-50 dark:bg-neutral-900 border-b border-red-200 dark:border-neutral-700">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-start gap-4">
-            <Info className="w-5 h-5 text-red-800 flex-shrink-0 mt-0.5" />
+            <Info className="w-5 h-5 text-red-800 dark:text-neutral-400 flex-shrink-0 mt-0.5" />
             <div className="flex-1">
-              <p className="text-red-900">
-                <strong>Important Update:</strong> We are heartbroken to share the passing of our founder and guiding voice, Gareth Valmont. His vision for a restored planet and his tireless curiosity shaped every part of Behemoth. Click to read our statement.{" "}
+              <p className="text-red-900 dark:text-neutral-200">
+                <strong>Important Update:</strong> We are heartbroken to share the passing of our founder and guiding voice, Gareth Valmont. His vision for a restored planet and his tireless curiosity shaped every part of Behemoth.{" "}
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="underline hover:text-red-700 transition-colors"
+                  className="underline hover:text-red-700 dark:hover:text-white transition-colors"
                 >
                   Read full statement
                 </button>
@@ -42,7 +42,7 @@ export function AlertBanner() {
             </div>
             <button
               onClick={() => setIsCollapsed(true)}
-              className="text-red-800 hover:text-red-900 transition-colors flex-shrink-0"
+              className="text-red-800 dark:text-neutral-400 hover:text-red-900 dark:hover:text-white transition-colors flex-shrink-0"
               aria-label="Collapse alert"
             >
               <ChevronUp className="w-5 h-5" />
@@ -73,9 +73,9 @@ export function AlertBanner() {
             </div>
           </div>
           
-          <div className="space-y-4 text-neutral-700 leading-relaxed mt-4">
+          <div className="space-y-4 text-neutral-700 dark:text-neutral-300 leading-relaxed mt-4">
             <p>
-              It is with profound sadness that we announce the passing of Dr. Gareth Valmont, founder and chief executive of Behemoth, on November 3rd, 2025. Dr. Valmont's life was dedicated to the ambitious mission of reversing extinction and restoring balance to our planet's ecosystems.
+              It is with profound sadness that we announce the passing of Dr. Gareth Valmont, founder and chief executive of Behemoth Biotech, on October 3rd, 2029. Dr. Valmont's life was dedicated to the ambitious mission of reversing extinction and restoring balance to our planet's ecosystems.
             </p>
             
             <p>
@@ -94,10 +94,10 @@ export function AlertBanner() {
               The Pleistocene wolf program has been temporarily suspended pending a full investigation and implementation of enhanced safety measures. We remain dedicated to Dr. Valmont's mission while ensuring such an incident never occurs again.
             </p>
             
-            <p className="italic border-l-4 border-neutral-300 pl-4">
+            <p className="italic border-l-4 border-neutral-300 dark:border-neutral-600 pl-4">
               "We don't play God by bringing back what was lost. We acknowledge our responsibility for what was taken, and we work to restore what can be restored."
               <br />
-              <span className="text-sm text-neutral-600">— Dr. Gareth Valmont, 2019</span>
+              <span className="text-sm text-neutral-600 dark:text-neutral-400">— Dr. Gareth Valmont, 2019</span>
             </p>
             
             <p>
@@ -105,10 +105,11 @@ export function AlertBanner() {
             </p>
 
             <p>
-            For media inquiries: press@behemoth.bio
-For condolences: legacy@behemoth.bio
+            <p>For media inquiries: press@behemoth.bio</p>
+              
+<p>For condolences: legacy@behemoth.bio</p>
 
-— The Behemoth Team
+<p>— The Behemoth Team</p>
             </p>
           </div>
         </DialogContent>
