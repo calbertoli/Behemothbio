@@ -142,6 +142,7 @@ export function People() {
                       {expanded.videoUrl ? (
                         <video
                           controls
+                          autoPlay
                           className="w-full h-full object-cover"
                           poster={expanded.image}
                         >
