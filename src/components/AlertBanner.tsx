@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Info, X, ChevronDown, ChevronUp } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
-import memorialImage from "figma:asset/d81c29fdb9d4cf9e1ce34926f2b8c8c3d50e2cdc.png";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function AlertBanner() {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -56,8 +56,8 @@ export function AlertBanner() {
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
           {/* Memorial Image */}
           <div className="w-full relative mb-4">
-            <img 
-              src={memorialImage} 
+            <ImageWithFallback 
+              src="https://behemoth.bio/images/remembering-gareth.jpg" 
               alt="Memorial for Dr. Gareth Valmont" 
               className="w-full h-auto rounded-lg"
             />
@@ -104,13 +104,11 @@ export function AlertBanner() {
               Dr. Valmont is survived by his wife, Claire, and their two children. Memorial services will be held privately. In lieu of flowers, the family requests donations be made to the Valmont Conservation Fund, which supports emerging scientists in the field of ecological restoration.
             </p>
 
-            <p>
             <p>For media inquiries: press@behemoth.bio</p>
               
-<p>For condolences: legacy@behemoth.bio</p>
+            <p>For condolences: legacy@behemoth.bio</p>
 
-<p>— The Behemoth Team</p>
-            </p>
+            <p>— The Behemoth Team</p>
           </div>
         </DialogContent>
       </Dialog>
